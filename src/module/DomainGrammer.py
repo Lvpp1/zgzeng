@@ -53,7 +53,7 @@ class GenerationDomainGrammer:
         :return: 返回语法字符串
         """
         grammerProcess = self.process_domain(grammer)
-        grammerStruct = f'domain:"{grammer}" OR hostname:"{grammer}" OR cert:"{grammer}" OR host:"{grammer}" cert:"{grammerProcess}"'
+        grammerStruct = f'domain:"{grammer}" OR hostname:"{grammer}" OR cert:"{grammer}" OR host:"{grammer}" OR cert:"{grammerProcess}"'
 
         return grammerStruct
 
