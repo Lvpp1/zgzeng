@@ -1,0 +1,70 @@
+
+"""
+fofa语法：
+    domain="域名"
+    host="域名"
+    cert="baidu"
+    cert="baidu.com"
+    cert.subject.cn = "baidu.com"
+    cert.domain="baidu.com"
+    逻辑或 ||， 逻辑与 &&， 模糊匹配 *=，匹配=， 完全匹配==
+
+hunter语法：
+    domain.suffix="qianxin.com"
+    domain="qianxin"
+    cert="baidu"
+    cert.subject="qianxin.com"
+    cert.subject.suffix="qianxin.com"
+    逻辑或||, 逻辑与&&, 匹配=， 完全匹配==
+
+quaker语法：
+    hostname:"unifiedlayer.com"
+    domain:"unifiedlayer.com"
+    cert:"unifiedlayer.com"
+    host:"unifiedlayer.com"
+
+zoomeye语法：
+    ssl="google"
+    ssl.cert.issuer.cn="pbx.wildix.com"
+    ssl.cert.subject.cn="example.com"
+    hostname="google.com"
+    domain="baidu.com"
+
+    ==, = ||, &&,
+
+
+
+"""
+
+
+icp
+
+fofa:      icp="沪ICP备13030189号" &&
+hunter:    icp.number="京ICP备16020626号-8"  && icp.web_name="奇安信" && icp.name="奇安信"
+quaker:    icp:"京ICP备08010314号"
+zoomeye:   icp.number="京ICP备10040895号-40"
+
+
+ip
+fofa: ip="1.1.1.1" ip="220.1.1.1/24"
+hunter: ip="1.1.1.1" ip="220.1.1.1/24"
+quaker:  ip:"1.1.1.1" ip:"220.1.1.1/24"
+zoomeye: ip="ip地址" cidr="22.1.1.1/24"
+
+
+关键字
+fofa:body=""||title=""||cert=""||cert.subject.org=""
+hunter: body=""||title=""||icp.web_name="奇安信" || icp.name="奇安信"
+quaker: body:""||title:""|| cert:""||icp_keywords:"奇虎"
+zoomeye: icp.name="知道创宇"||body=""||title=""
+
+
+
+
+
+
+
+
+
+
+
