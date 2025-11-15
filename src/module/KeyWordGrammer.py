@@ -8,7 +8,7 @@ from module.wrapper import common
 
 
 class GenerationKeyWordGrammer:
-    """根据域名生成搜索语法"""
+    """根据关键字生成搜索语法"""
 
     def __init__(self, target):
         self.target = target
