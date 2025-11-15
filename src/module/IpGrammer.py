@@ -6,7 +6,7 @@
 from module.wrapper import common
 
 class GenerationIPGrammer:
-    """根据ICP备案号生成搜索语法"""
+    """根据IP备案号生成搜索语法"""
 
     def __init__(self, target):
         self.target = target
